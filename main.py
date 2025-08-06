@@ -5,6 +5,7 @@ import tempfile
 import os
 import httpx
 import re
+from gemini_utils import extract_items_from_transcript
 
 # Load environment variables
 load_dotenv()
@@ -64,10 +65,9 @@ async def transcribe_audio(file: UploadFile = File(...)):
         if 'audio_path' in locals() and os.path.exists(audio_path):
             os.remove(audio_path)
 
-    grocery_list = extract_items_and_quantities(transcript)
-
+            grocery_list = extract_items_from_transcript(transcript)
     return {
-        "transcript": transcript,
+        "transcript": grocery_list,
         
     }
 
