@@ -24,7 +24,7 @@ async def transcribe_with_groq(audio_path: str) -> str:
     with open(audio_path, "rb") as audio_file:
         files = {
             "file": ("audio.mp3", audio_file, "audio/mpeg"),
-            "model": (None, "whisper-large-v3")
+            "model": (None, "whisper-large-v3-turbo")
         }
 
         try:
