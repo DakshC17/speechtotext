@@ -4,12 +4,12 @@ An AI-powered FastAPI service that transcribes audio recordings and intelligentl
 
 ## Features
 
-- ** Audio Transcription**: High-accuracy speech-to-text using Groq's Whisper Large V3 Turbo model
-- ** Smart Grocery Extraction**: AI-powered parsing using Google's Gemini 2.0 Flash to identify items and quantities
-- ** Multilingual Support**: Handles multiple Indian languages (Hindi, Tamil, Telugu, Malayalam, Kannada, Bengali, Odia, Marathi) plus English
-- ** Structured Output**: Returns both raw transcript and parsed JSON grocery list
-- ** Docker Ready**: Containerized for easy deployment to Cloud Run or any container platform
-- ** Fast & Async**: Built with FastAPI for high-performance async processing
+-  **Audio Transcription**: High-accuracy speech-to-text using Groq's Whisper Large V3 Turbo model
+-  **Smart Grocery Extraction**: AI-powered parsing using Google's Gemini 2.0 Flash to identify items and quantities
+-  **Multilingual Support**: Handles multiple Indian languages (Hindi, Tamil, Telugu, Malayalam, Kannada, Bengali, Odia, Marathi) plus English
+-  **Structured Output**: Returns both raw transcript and parsed JSON grocery list
+-  **Docker Ready**: Containerized for easy deployment to Cloud Run or any container platform
+-  **Fast & Async**: Built with FastAPI for high-performance async processing
 
 ## Architecture
 
