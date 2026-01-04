@@ -1,8 +1,8 @@
-# 🎙️ Audio Transcriber & Grocery List Extractor
+# Speech to Text Transcriber
 
 An AI-powered FastAPI service that transcribes audio recordings and intelligently extracts grocery items with quantities. Perfect for converting voice memos into structured shopping lists.
 
-## 🌟 Features
+## Features
 
 - **🎯 Audio Transcription**: High-accuracy speech-to-text using Groq's Whisper Large V3 Turbo model
 - **🛒 Smart Grocery Extraction**: AI-powered parsing using Google's Gemini 2.0 Flash to identify items and quantities
@@ -11,7 +11,7 @@ An AI-powered FastAPI service that transcribes audio recordings and intelligentl
 - **🐳 Docker Ready**: Containerized for easy deployment to Cloud Run or any container platform
 - **⚡ Fast & Async**: Built with FastAPI for high-performance async processing
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐
