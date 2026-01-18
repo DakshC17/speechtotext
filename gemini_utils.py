@@ -1,20 +1,16 @@
 # gemini_utils.py
-
 import os
 import re
 import json
 from dotenv import load_dotenv
 import google.generativeai as genai
-
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 def extract_items_from_transcript(transcript: str) -> list:
     prompt = f"""
 You are a smart grocery list parser.
-
 The user will give you a transcription of a spoken grocery list.
 
 Your task:
